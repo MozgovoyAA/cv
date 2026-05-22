@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Александр Мозговой — разработка mobile, backend и IoT-систем</title>
+  <meta name="description" content="Александр Мозговой. Разработка mobile, backend и IoT-систем. Android, backend API, fintech, B2B, industrial IoT, промышленная телеметрия." />
+  <meta property="og:title" content="Александр Мозговой — разработка mobile, backend и IoT-систем" />
+  <meta property="og:description" content="13+ лет инженерного опыта. Mobile, backend, fintech, B2B и industrial IoT. Коммерческие мобильные приложения, backend API и industrial IoT." />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          },
+          colors: {
+            bg: '#111114',
+            panel: '#1b1b20',
+            panel2: '#222229',
+            border: '#333340',
+            text: '#f0f0f4',
+            body: '#c8c8d2',
+            muted: '#a1a1af',
+            dim: '#7d7d8b',
+            accent: '#c7bfff',
+            accent2: '#8e7fff'
+          },
+          boxShadow: {
+            soft: '0 18px 70px rgba(0,0,0,.28)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background: #111114;
+      color: #f0f0f4;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .grid-bg {
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(199,191,255,.075) 1px, transparent 0),
+        radial-gradient(circle at 50% 0%, rgba(142,127,255,.14), transparent 32rem);
+      background-size: 32px 32px, auto;
+    }
+    .card {
+      background: rgba(27,27,32,.78);
+      border: 1px solid #333340;
+      box-shadow: 0 18px 70px rgba(0,0,0,.22);
+      backdrop-filter: blur(12px);
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      height: 1px;
+      flex: 1;
+      background: #333340;
+      margin-left: 1rem;
+    }
+    .prose p { color: #c8c8d2; line-height: 1.75; }
+    .prose li { color: #c8c8d2; line-height: 1.65; }
+    .case-card p { color: #c8c8d2; line-height: 1.65; }
+    .case-card li { color: #c8c8d2; line-height: 1.55; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Александр Мозговой",
+    "jobTitle": "Software Engineer",
+    "knowsAbout": ["Android", "Kotlin", "Backend", "IoT", "Fintech", "Industrial automation"],
+    "email": "mailto:mozgovoy.a.a@mail.ru",
+    "url": ""
+  }
+  </script>
+</head>
+<body class="bg-bg text-text selection:bg-accent2/40">
+  <nav class="fixed top-0 z-50 w-full border-b border-border bg-bg/82 backdrop-blur-xl">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
+      <a href="#top" class="font-mono text-xs font-semibold uppercase tracking-[.22em] text-text">Александр Мозговой</a>
+      <div class="hidden items-center gap-7 md:flex">
+        <a href="#about" class="font-mono text-xs text-muted hover:text-accent">Обо мне</a>
+        <a href="#experience" class="font-mono text-xs text-muted hover:text-accent">Опыт</a>
+        <a href="#cases" class="font-mono text-xs text-muted hover:text-accent">Кейсы</a>
+        <a href="#stack" class="font-mono text-xs text-muted hover:text-accent">Стек</a>
+      </div>
+      <a href="mailto:mozgovoy.a.a@mail.ru" class="rounded-full bg-accent px-4 py-2 font-mono text-xs font-semibold text-[#1b1738] transition hover:-translate-y-0.5 hover:bg-white">Связаться</a>
+    </div>
+  </nav>
+
+  <main id="top" class="grid-bg pt-28">
+    <section class="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
+      <div class="card relative overflow-hidden rounded-3xl p-7 md:p-12">
+        <div class="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-accent2/20 blur-3xl"></div>
+        <div class="relative max-w-4xl">
+          <p class="mb-5 font-mono text-xs font-semibold uppercase tracking-[.28em] text-accent">Открыт к проектным контрактам</p>
+          <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-text md:text-6xl">Александр Мозговой</h1>
+          <p class="mb-7 text-2xl font-semibold leading-snug text-text md:text-3xl">Разработка mobile, backend и IoT-систем</p>
+          <p class="max-w-3xl text-lg leading-8 text-body md:text-xl md:leading-9">Проектирую и разрабатываю production-системы: мобильные приложения, backend-сервисы, интеграции с оборудованием и промышленной телеметрией.</p>
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a href="https://t.me/mozgovoy_aleksandr" target="_blank" rel="noreferrer" class="rounded-full bg-panel2 px-5 py-3 font-mono text-sm font-semibold text-text ring-1 ring-border transition hover:bg-accent hover:text-[#1b1738]">Telegram</a>
+            <a href="mailto:mozgovoy.a.a@mail.ru" class="rounded-full bg-panel2 px-5 py-3 font-mono text-sm font-semibold text-text ring-1 ring-border transition hover:bg-accent hover:text-[#1b1738]">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-5 pb-16 md:grid-cols-4 md:px-8 md:pb-24">
+      <div class="rounded-2xl border border-border bg-panel/75 p-6">
+        <div class="mb-2 text-4xl font-extrabold text-accent">13+</div>
+        <div class="font-mono text-xs uppercase leading-5 tracking-wider text-muted">лет в инженерии</div>
+      </div>
+      <div class="rounded-2xl border border-border bg-panel/75 p-6">
+        <div class="mb-2 text-4xl font-extrabold text-accent">fintech</div>
+        <div class="font-mono text-xs uppercase leading-5 tracking-wider text-muted">B2B / IoT</div>
+      </div>
+      <div class="rounded-2xl border border-border bg-panel/75 p-6">
+        <div class="mb-2 text-4xl font-extrabold text-accent">full-cycle</div>
+        <div class="font-mono text-xs uppercase leading-5 tracking-wider text-muted">разработка</div>
+      </div>
+      <div class="rounded-2xl border border-border bg-panel/75 p-6">
+        <div class="mb-2 text-4xl font-extrabold text-accent">10+</div>
+        <div class="font-mono text-xs uppercase leading-5 tracking-wider text-muted">человек в команде</div>
+      </div>
+    </section>
+
+    <section id="about" class="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
+      <div class="section-title mb-8 flex items-center"><h2 class="text-3xl font-bold tracking-tight">Кто я</h2></div>
+      <div class="grid gap-8 md:grid-cols-[1.15fr_.85fr]">
+        <div class="prose space-y-5 text-lg">
+          <p>Инженер с опытом на стыке мобильной разработки, backend, промышленной автоматизации и управления командой.</p>
+          <p>Моя сильная сторона — делать прикладные системы под ключ: от архитектуры и API до мобильного приложения, релизов, мониторинга и сопровождения.</p>
+          <p>Беру контракты на разработку мобильных приложений, backend-интеграции и технический консалтинг.</p>
+        </div>
+        <div class="rounded-2xl border border-border bg-panel/75 p-6">
+          <h3 class="mb-4 font-mono text-xs font-semibold uppercase tracking-[.22em] text-accent">Основные направления</h3>
+          <ul class="space-y-3 text-body">
+            <li>— мобильные приложения для бизнеса</li>
+            <li>— backend API и интеграции</li>
+            <li>— fintech и платёжные сценарии</li>
+            <li>— B2B-системы</li>
+            <li>— industrial IoT и телеметрия</li>
+            <li>— CI/CD, релизы и процессы разработки</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
+      <div class="section-title mb-10 flex items-center"><h2 class="text-3xl font-bold tracking-tight">Профессиональный путь</h2></div>
+      <div class="space-y-6">
+        <article class="card rounded-2xl p-6 md:p-8">
+          <div class="mb-2 font-mono text-xs font-semibold uppercase tracking-wider text-accent">2021 — настоящее время</div>
+          <h3 class="mb-2 text-2xl font-bold">Webbankir / WB-Digital</h3>
+          <p class="mb-6 text-body leading-7">Финтех-группа в сегменте онлайн-кредитования и около-банковских сервисов. Прошёл путь от Android Senior до руководителя мобильного направления и вернулся в инженерные задачи.</p>
+          <div class="grid gap-5 md:grid-cols-3">
+            <div class="rounded-xl border border-border bg-bg/40 p-5">
+              <h4 class="mb-2 font-semibold text-text">Android Senior Developer</h4>
+              <p class="text-sm leading-6 text-body">May 2025 — настоящее время. Android, Kotlin Multiplatform, архитектура, многомодульность, Jetpack Compose, Coroutines / Flow, CI/CD.</p>
+            </div>
+            <div class="rounded-xl border border-border bg-bg/40 p-5 md:col-span-2">
+              <h4 class="mb-2 font-semibold text-text">Mobile Team Lead / Head of Mobile Development</h4>
+              <p class="mb-4 text-sm leading-6 text-body">Sep 2021 — May 2025. Возглавил мобильное направление и развил его до самостоятельного отдела.</p>
+              <ul class="grid gap-2 text-sm text-body md:grid-cols-2">
+                <li>— архитектура двух приложений</li>
+                <li>— найм и развитие команды</li>
+                <li>— CI/CD и release flow</li>
+                <li>— code review</li>
+                <li>— hotfix / rollback процессы</li>
+                <li>— интеграции с партнёрами</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-border bg-panel/70 p-6">
+            <div class="mb-2 font-mono text-xs uppercase tracking-wider text-muted">2020 — 2021</div>
+            <h3 class="mb-2 text-xl font-bold">Life Control / Home-alone</h3>
+            <p class="text-body leading-7">Android-приложения умного дома, Google Play, Tuya SDK, BLE / IoT-сценарии, разработка новых функций и сопровождение.</p>
+          </article>
+          <article class="rounded-2xl border border-border bg-panel/70 p-6">
+            <div class="mb-2 font-mono text-xs uppercase tracking-wider text-muted">2019 — 2020</div>
+            <h3 class="mb-2 text-xl font-bold">Rubetek</h3>
+            <p class="text-body leading-7">Продуктовая разработка Android-приложения для умного дома: кастомный UI, анимации, Kanban / Jira, code review.</p>
+          </article>
+          <article class="rounded-2xl border border-border bg-panel/70 p-6">
+            <div class="mb-2 font-mono text-xs uppercase tracking-wider text-muted">2015 — 2020</div>
+            <h3 class="mb-2 text-xl font-bold">KaScada</h3>
+            <p class="text-body leading-7">5 лет с одним заказчиком. Полный цикл: промышленные контроллеры, backend, web, Android-приложение, биллинг и аналитика.</p>
+          </article>
+          <article class="rounded-2xl border border-border bg-panel/70 p-6">
+            <div class="mb-2 font-mono text-xs uppercase tracking-wider text-muted">2012 — 2020</div>
+            <h3 class="mb-2 text-xl font-bold">Промышленная автоматизация</h3>
+            <p class="text-body leading-7">ПЛК Siemens / ОВЕН, IEC 61131-3, CodeSys, HMI / SCADA, Modbus RTU/TCP, RS-485 / RS-232.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
+      <div class="section-title mb-10 flex items-center"><h2 class="text-3xl font-bold tracking-tight">Избранные кейсы</h2></div>
+      <div class="grid gap-6 md:grid-cols-2">
+        <article class="case-card rounded-2xl border border-border bg-panel/75 p-6">
+          <div class="mb-3 font-mono text-xs font-semibold uppercase tracking-wider text-accent">Fintech</div>
+          <h3 class="mb-3 text-2xl font-bold">Финтех-приложения</h3>
+          <p class="mb-4">Под моим управлением развивались два флагманских мобильных приложения Webbankir / WB-Digital.</p>
+          <ul class="space-y-2">
+            <li>— архитектура мобильных приложений;</li>
+            <li>— процессы разработки и релизов;</li>
+            <li>— интеграции с партнёрами;</li>
+            <li>— multi-store delivery;</li>
+            <li>— стабильный релизный процесс.</li>
+          </ul>
+        </article>
+
+        <article class="case-card rounded-2xl border border-border bg-panel/75 p-6">
+          <div class="mb-3 font-mono text-xs font-semibold uppercase tracking-wider text-accent">Payments</div>
+          <h3 class="mb-3 text-2xl font-bold">Интеграция СБП в Android и iOS</h3>
+          <p class="mb-4">Руководил интеграцией Системы Быстрых Платежей в мобильные приложения.</p>
+          <ul class="space-y-2">
+            <li>— банковские SDK;</li>
+            <li>— deeplink / universal link сценарии;</li>
+            <li>— API-контракты;</li>
+            <li>— обработка состояний платежа;</li>
+            <li>— запуск в production.</li>
+          </ul>
+        </article>
+
+        <article class="case-card rounded-2xl border border-border bg-panel/75 p-6">
+          <div class="mb-3 font-mono text-xs font-semibold uppercase tracking-wider text-accent">Monitoring</div>
+          <h3 class="mb-3 text-2xl font-bold">Алертинг нефатальных ошибок</h3>
+          <p class="mb-4">Спроектировал систему мониторинга нефатальных ошибок и деградаций пользовательских сценариев.</p>
+          <ul class="space-y-2">
+            <li>— раннее обнаружение проблем после релизов;</li>
+            <li>— контроль критических бизнес-сценариев;</li>
+            <li>— сокращение времени реакции команды;</li>
+            <li>— повышение предсказуемости релизов.</li>
+          </ul>
+        </article>
+
+        <article class="case-card rounded-2xl border border-border bg-panel/75 p-6">
+          <div class="mb-3 font-mono text-xs font-semibold uppercase tracking-wider text-accent">Industrial IoT</div>
+          <h3 class="mb-3 text-2xl font-bold">OnlineScan · промышленный мониторинг</h3>
+          <p class="mb-4">Полностью разработал Android-приложение для удалённого мониторинга оборудования и промышленной телеметрии.</p>
+          <ul class="space-y-2">
+            <li>— мониторинг объектов и оборудования;</li>
+            <li>— текущие параметры, графики и мнемосхемы;</li>
+            <li>— интеграция с backend API;</li>
+            <li>— визуализация промышленной телеметрии;</li>
+            <li>— production-ready заказная разработка.</li>
+          </ul>
+        </article>
+
+        <article class="case-card rounded-2xl border border-border bg-panel/75 p-6">
+          <div class="mb-3 font-mono text-xs font-semibold uppercase tracking-wider text-accent">Business App</div>
+          <h3 class="mb-3 text-2xl font-bold">MoneyTracker · финансовый учёт объектов</h3>
+          <p class="mb-4">Полностью разработал Android-приложение для учёта доходов и расходов по объектам в строительной сфере.</p>
+          <ul class="space-y-2">
+            <li>— Jetpack Compose, Material 3, Clean Architecture;</li>
+            <li>— Room + миграции схемы;</li>
+            <li>— backup / restore базы данных;</li>
+            <li>— Excel-отчёты через Apache POI;</li>
+            <li>— подписанный release v6.0.</li>
+          </ul>
+        </article>
+
+        <article class="case-card rounded-2xl border border-border bg-panel/75 p-6">
+          <div class="mb-3 font-mono text-xs font-semibold uppercase tracking-wider text-accent">B2B / Hardware</div>
+          <h3 class="mb-3 text-2xl font-bold">Приложение для частных АЗС</h3>
+          <p class="mb-4">Android-приложение для корпоративного автопарка и производителя топливных колонок. Проект под NDA.</p>
+          <ul class="space-y-2">
+            <li>— виртуальная топливная карта;</li>
+            <li>— Bluetooth-подключение к колонке;</li>
+            <li>— лимиты и параметры заправки;</li>
+            <li>— realtime-синхронизация с backend;</li>
+            <li>— offline / unstable network сценарии.</li>
+          </ul>
+        </article>
+
+        <article class="case-card rounded-2xl border border-border bg-panel/75 p-6">
+          <div class="mb-3 font-mono text-xs font-semibold uppercase tracking-wider text-accent">Engineering</div>
+          <h3 class="mb-3 text-2xl font-bold">Видеонаблюдение под ключ</h3>
+          <p class="mb-4">Полный цикл проекта для коммерческого объекта: от ТЗ и проектирования до сдачи.</p>
+          <ul class="space-y-2">
+            <li>— 45 точек видеонаблюдения;</li>
+            <li>— 10+ распределительных щитов;</li>
+            <li>— 3+ км кабельных трасс;</li>
+            <li>— сервер видеонаблюдения;</li>
+            <li>— управление монтажными работами.</li>
+          </ul>
+        </article>
+
+        <article class="case-card rounded-2xl border border-border bg-panel/75 p-6">
+          <div class="mb-3 font-mono text-xs font-semibold uppercase tracking-wider text-accent">Full-cycle IoT</div>
+          <h3 class="mb-3 text-2xl font-bold">KaScada HMI · Android + IoT + Backend</h3>
+          <p class="mb-4">Долгосрочный проект для сообщества Arduino / ESP в России.</p>
+          <ul class="space-y-2">
+            <li>— промышленные контроллеры и Modbus;</li>
+            <li>— backend на Linux, Java, PHP, MySQL;</li>
+            <li>— web-интерфейс и аналитика;</li>
+            <li>— Android-приложение;</li>
+            <li>— Google Play Billing и ЮKassa.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
+      <div class="section-title mb-10 flex items-center"><h2 class="text-3xl font-bold tracking-tight">Технологический стек</h2></div>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border border-border bg-panel/75 p-6">
+          <h3 class="mb-4 font-mono text-xs font-semibold uppercase tracking-[.22em] text-accent">Mobile</h3>
+          <p class="leading-7 text-body">Kotlin, Java, Jetpack Compose, XML, Custom View, Navigation Compose, MVI / TEA / MVVM, Clean Architecture, Hilt, Kodein, Coroutines / Flow, KMP.</p>
+        </div>
+        <div class="rounded-2xl border border-border bg-panel/75 p-6">
+          <h3 class="mb-4 font-mono text-xs font-semibold uppercase tracking-[.22em] text-accent">Backend / Data</h3>
+          <p class="leading-7 text-body">Ktor, Java, PHP, REST, GraphQL, JSON-RPC, WebSockets, Room, SQLite, MySQL, Kotlin Serialization, Gson.</p>
+        </div>
+        <div class="rounded-2xl border border-border bg-panel/75 p-6">
+          <h3 class="mb-4 font-mono text-xs font-semibold uppercase tracking-[.22em] text-accent">Infrastructure</h3>
+          <p class="leading-7 text-body">Linux, Apache, GitLab CI/CD, Fastlane, GitHub Actions, Detekt, multi-store delivery, Google Play Billing, ЮKassa.</p>
+        </div>
+        <div class="rounded-2xl border border-border bg-panel/75 p-6">
+          <h3 class="mb-4 font-mono text-xs font-semibold uppercase tracking-[.22em] text-accent">Industrial IoT</h3>
+          <p class="leading-7 text-body">Modbus RTU/TCP, MQTT, RS-485, RS-232, Siemens PLC, ОВЕН, IEC 61131-3, CodeSys, SCADA / HMI, ESP32, Arduino.</p>
+        </div>
+        <div class="rounded-2xl border border-border bg-panel/75 p-6">
+          <h3 class="mb-4 font-mono text-xs font-semibold uppercase tracking-[.22em] text-accent">Analytics</h3>
+          <p class="leading-7 text-body">Firebase, Crashlytics, Remote Config, AppMetrica, AppsFlyer, Mindbox, Tuya SDK, NDK.</p>
+        </div>
+        <div class="rounded-2xl border border-border bg-panel/75 p-6">
+          <h3 class="mb-4 font-mono text-xs font-semibold uppercase tracking-[.22em] text-accent">Stores</h3>
+          <p class="leading-7 text-body">Google Play, App Store, AppGallery, RuStore, NashStore, Xiaomi GetApps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-5 pb-20 md:px-8 md:pb-28">
+      <div class="card rounded-3xl p-8 text-center md:p-12">
+        <h2 class="mb-4 text-3xl font-extrabold tracking-tight md:text-4xl">Нужна разработка приложения или техническая консультация?</h2>
+        <p class="mx-auto mb-8 max-w-2xl text-lg leading-8 text-body">Открыт к проектным контрактам, part-time и долгосрочному техническому консалтингу. Работаю удалённо, по договору через ИП.</p>
+        <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a href="https://t.me/mozgovoy_aleksandr" target="_blank" rel="noreferrer" class="w-full rounded-full bg-accent px-6 py-4 font-mono text-sm font-semibold text-[#1b1738] transition hover:-translate-y-0.5 hover:bg-white sm:w-auto">Telegram @mozgovoy_aleksandr</a>
+          <a href="mailto:mozgovoy.a.a@mail.ru" class="w-full rounded-full bg-panel2 px-6 py-4 font-mono text-sm font-semibold text-text ring-1 ring-border transition hover:bg-accent hover:text-[#1b1738] sm:w-auto">mozgovoy.a.a@mail.ru</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-border bg-bg py-8">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 text-center md:flex-row md:px-8 md:text-left">
+      <p class="font-mono text-xs text-muted">© 2026 Александр Мозговой · Краснодар · удалённо</p>
+      <div class="flex gap-5 font-mono text-xs">
+        <a class="text-muted hover:text-accent" href="https://t.me/mozgovoy_aleksandr">Telegram</a>
+        <a class="text-muted hover:text-accent" href="mailto:mozgovoy.a.a@mail.ru">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
